@@ -1,6 +1,6 @@
 # 🎓 University Thesis Management System
 
-> A comprehensive web platform for managing the entire lifecycle of university theses—from assignment to final grading.
+> A comprehensive web platform for managing the entire lifecycle of university theses from assignment to final grading.
 
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![University](https://img.shields.io/badge/Context-University%20Project-blue)
@@ -56,7 +56,7 @@ The codebase is structured to separate logic (PHP), webpages (HTML), styling (CS
 Since this project uses Native PHP and MySQL, you will need a local server environment (like **XAMPP** or **WAMP**) to run it.
 
 1.  **Clone the repository:**
-    * git clone [https://github.com/your-username/thesis-management-system.git](https://github.com/your-username/thesis-management-system.git)
+    * git clone [https://github.com/vasizaf/University-Thesis-Manager-Web-App.git](https://github.com/vasizaf/University-Thesis-Manager-Web-App.git)
   
 2.  **Move the folder:**
     * Copy the project folder.
