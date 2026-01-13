@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Εξέταση διπλωματικής</title>
+  <link rel="stylesheet" href="../CSS/common.css">
+  <link rel="stylesheet" href="../CSS/foititis.css">
+</head>
+
+<script src="../JavaScript/check_page.js"></script>
+
+<body>
+  <nav class="navbar">
+    <div class="upatraslogo">
+      <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="anakoinoseis.html" target="_blank">ΑΡΧΙΚΗ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/dep/" target="_blank">ΜΕΛΗ ΔΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/edip-etep/" target="_blank">ΜΕΛΗ ΕΔΙΠ-ΕΤΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/grammateia/" target="_blank">ΓΡΑΜΜΑΤΕΙΑ</a></li>
+      <li><a href="https://nemertes.library.upatras.gr/home" target="_blank">ΝΗΜΕΡΤΗΣ</a></li>
+    </ul>
+    <div class="ceidlogo">
+      <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/ceidlogo.png" alt="CEID logo" class="logo-right">
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="foititishome.html">Προεπισκόπηση</a></li>
+      <li><a href="foititisdiplomatiki.html">H διπλωματική μου</a></li>
+      <li><a href="foititisaitiseis.html">Οι αιτήσεις μου</a></li>
+      <li><a href="foititisexetasi.html">Εξέταση διπλωματικής</a></li>
+    </ul>
+    <script src="../JavaScript/logout.js"></script>
+    <button id="logout-button" class="logout">Log out</button>
+  </aside>
+
+  <main class="main-content">   
+    <article id="exetasi">
+      <h1>Εξέταση διπλωματικής</h1>
+    </article>
+
+    <div id="thesis-material">
+      <h3>Υλικό διπλωματικής</h3>
+
+      <!-- Independent file upload form -->
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <label for="proxeiro_keimeno" style="white-space: nowrap;">Πρόχειρο κείμενο διπλωματικής:</label>
+
+        <form id="uploadForm" enctype="multipart/form-data" method="POST" style="display: flex; align-items: center; gap: 10px;">
+          <div id="fileUploadContainer" style="display: flex; align-items: center; gap: 10px;">
+            <input type="file" id="proxeiro_keimeno" name="proxeiro_keimeno" accept=".pdf,.doc,.docx,.txt" required>
+            <input type="submit" value="Ανέβασμα αρχείου">
+          </div>
+        </form>
+
+        <span id="uploadedFileLink" style="margin-left: 10px;"></span>
+        <button id="replaceFileButton" style="margin-left: 10px; display: none;">Ανέβασμα νέου αρχείου</button>
+        <button id="deleteFileButton" style="margin-left: 10px; display: none;">Διαγραφή αρχείου</button>
+      </div>
+
+      <div id="uploadedFileDisplay"></div>
+
+
+      <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+        <label for="newLink" style="white-space: nowrap;">Συμπληρωματικό υλικό:</label>
+        <form id="linkForm" style="display: flex; gap: 10px; flex: 1;">
+          <input type="url" id="newLink" placeholder="Επικολλήστε σύνδεσμο..." required style="flex: 1;">
+          <button type="submit">Προσθήκη</button>
+        </form>
+      </div>
+
+      <ul id="linkList" style="margin-top: 10px;"></ul>
+
+    </div>
+
+    <div id="thesis-exam">
+      <h3>Πληροφορίες εξέτασης</h3>
+      <form id="exetasiForm" class="exam-form" method="POST">
+        <p>Τρόπος εξέτασης: 
+          <select name="tropos_exetasis" required>
+            <option value="">--Επιλέξτε--</option>
+            <option value="Dia Zosis">Δια ζώσης</option>
+            <option value="Diadiktiaka">Διαδικτυακά</option>
+          </select>
+        </p>
+
+        <p>Αίθουσα εξέτασης ή σύνδεσμος: 
+          <input type="text" name="aithousa" required>
+        </p>
+
+        <p>Ημερομηνία:
+          <input type="date" id="imerominia" name="imerominia" required>
+        </p>
+
+        <p>Ώρα:
+          <select name="ora" required>
+            <option value="">--Επιλέξτε ώρα--</option>
+            <!-- Time options... -->
+            <option value="09:00">09:00</option>
+            <option value="09:30">09:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="20:30">20:30</option>
+            <option value="21:00">21:00</option>
+          </select>
+        </p>
+
+        <input type="submit" value="Αποθήκευση">
+      </form>
+
+      <p><button type="button" id="editButton" disabled>Επεξεργασία</button></p>
+    </div>
+
+    <div id="after-exam-material">
+      <h3>Υλικό μετά την εξέταση</h3>
+      <p>
+        Πρακτικό εξέτασης:
+        <a href="praktiko.html" target="_blank" rel="noopener noreferrer">Άνοιγμα πρακτικού</a>
+      </p>
+      <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+        <label for="finalThesisLink" style="white-space: nowrap;">Τελικό κείμενο διπλωματικής:</label>
+        <form id="finalThesisForm" style="display: flex; gap: 10px; flex: 1;">
+          <input type="url" id="finalThesisLink" placeholder="Επικολλήστε σύνδεσμο..." required style="flex: 1;">
+          <button type="submit">Προσθήκη</button>
+        </form>
+      </div>
+      <div id="finalThesisDisplay" style="margin-top: 10px;"></div>
+
+    </div>
+  </main>
+
+  <script src="../JavaScript/foititis_exetasi.js"></script>
+</body>
+</html>

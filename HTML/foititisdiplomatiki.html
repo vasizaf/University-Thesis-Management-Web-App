@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Η διπλωματική μου</title>
+  <link rel="stylesheet" href="../CSS/common.css">
+  <link rel="stylesheet" href="../CSS/foititis.css">
+</head>
+
+<script src="../JavaScript/check_page.js"></script>
+
+<body>
+
+  <nav class="navbar">
+    <div class="upatraslogo">
+      <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="anakoinoseis.html" target="_blank">ΑΡΧΙΚΗ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/dep/" target="_blank">ΜΕΛΗ ΔΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/edip-etep/" target="_blank">ΜΕΛΗ ΕΔΙΠ-ΕΤΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/grammateia/" target="_blank">ΓΡΑΜΜΑΤΕΙΑ</a></li>
+      <li><a href="https://nemertes.library.upatras.gr/home" target="_blank">ΝΗΜΕΡΤΗΣ</a></li>
+    </ul>
+    <div class="ceidlogo">
+      <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/ceidlogo.png" alt="CEID logo" class="logo-right">
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="../HTML/foititishome.html">Προεπισκόπηση</a></li>
+      <li><a href="../HTML/foititisdiplomatiki.html">H διπλωματική μου</a></li>
+      <li><a href="../HTML/foititisaitiseis.html">Οι αιτήσεις μου</a></li>
+      <li><a href="../HTML/foititisexetasi.html">Εξέταση διπλωματικής</a></li>
+    </ul>
+    <script src="../JavaScript/logout.js"></script>
+    <button id="logout-button" class="logout">Log out</button>
+  </aside>
+
+  <main class="main-content">
+    <article id="diplomatiki">
+      <h1>Η διπλωματική μου</h1>
+    </article>
+
+    <div class="card-row">
+      <div class="info-card" id="thesis-info">
+        <h2>Στοιχεία διπλωματικής</h2>
+        <ul class="info-list">
+          <li><strong>Τίτλος:</strong> <span id="titlos" class="info-text"></span></li>
+          <li><strong>Περίληψη:</strong> <span id="perigrafi" class="info-text"></span></li>
+          <li><strong>Αρχείο περιγραφής:</strong> <span id="arxeio" class="info-text"></span></li>
+          <li><strong>Κατάσταση:</strong> <span id="status" class="info-text"></span></li>
+          <li><strong>Επιβλέπων καθηγητής:</strong> <span id="epivlepontas" class="info-text"></span></li>
+          <li><strong>Μέλη 3μελούς επιτροπής:</strong> <span id="meloi" class="info-text"></span></li>
+          <li><strong>Χρόνος από έναρξη:</strong> <span id="xronos" class="info-text"></span></li>
+          <li><strong>Βαθμός:</strong> <span id="vathmos" class="info-text"></span></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../JavaScript/foititis_diplomatiki.js"></script>
+</body>
+
+</html>

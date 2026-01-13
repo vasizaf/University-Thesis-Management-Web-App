@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcements</title>
+  <link rel="stylesheet" href="../CSS/login.css">
+  <link rel="stylesheet" href="../CSS/kathigitis.css">
+  <link rel="stylesheet" href="../CSS/common.css">
+</head>
+<body class="bg-image-page">
+
+  <div class="top-bar">
+    <a href="https://www.upatras.gr/" target="_blank"><img src="../images/upatraslogo.png" class="logo-left"></a>
+    <h1>Ανακοινώσεις παρουσιάσεων διπλωματικών εργασιών ΤΜΗΥΠ</h1>
+    <form action="../HTML/login.html" style="margin:0;display:inline;">
+      <input type="submit" value="Login" class="login-btn topbar-login-btn" />
+    </form>
+    <a href="https://www.ceid.upatras.gr/" target="_blank"><img src="../images/ceidlogo.png" class="logo-right"></a>
+  </div>
+
+  <div class="container">
+    <h2>Ανακοινώσεις</h2>
+    <div class="filters">
+      <label>Από: <input type="date" id="minDate"></label>
+      <label>Έως: <input type="date" id="maxDate"></label>
+      <label>Επιβλέποντας:
+        <select id="authorSelect">
+          <option value="">Όλοι</option>
+        </select>
+      </label>
+      <button id="searchBtn">Αναζήτηση</button>
+
+      <!-- Download buttons row below search -->
+      <div class="download-btn-row">
+        <button id="downloadJsonBtn" title="Download results as JSON">Download JSON</button>
+        <button id="downloadXmlBtn" title="Download results as XML">Download XML</button>
+      </div>
+
+    </div>
+
+    <div id="announcementsContainer"></div>
+  </div>
+
+  <script src="../JavaScript/anakoinoseis.js"></script>
+</body>
+</html>

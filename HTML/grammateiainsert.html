@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Εισαγωγή στοιχείων</title>
+  <link rel="stylesheet" href="../CSS/common.css" />
+  <link rel="stylesheet" href="../CSS/grammateia.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="upatraslogo">
+      <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="anakoinoseis.html" target="_blank">ΑΡΧΙΚΗ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/dep/" target="_blank">ΜΕΛΗ ΔΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/edip-etep/" target="_blank">ΜΕΛΗ ΕΔΙΠ-ΕΤΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/grammateia/" target="_blank">ΓΡΑΜΜΑΤΕΙΑ</a></li>
+      <li><a href="https://nemertes.library.upatras.gr/home" target="_blank">ΝΗΜΕΡΤΗΣ</a></li>
+    </ul>
+    <div class="ceidlogo">
+      <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/ceidlogo.png" alt="CEID logo" class="logo-right" />
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="grammateiahome.html">Προεπισκόπηση</a></li>
+      <li><a href="grammateiadiplomatikes.html">Διπλωματικές</a></li>
+      <li><a href="grammateiainsert.html">Εισαγωγή στοιχείων</a></li>
+    </ul>
+    <button class="logout" id="logout-button">Log out</button>
+  </aside>
+
+  <main class="main-content">
+    <article id="overview">
+      <h1>Εισαγωγή στοιχείων φοιτητή/διδάσκοντα</h1>
+    </article>
+
+    <div class="toggle-buttons-wrapper">
+      <button id="show-manual-btn" class="change-btn">Χειροκίνητη εισαγωγή</button>
+      <button id="show-json-btn"   class="change-btn">Ανέβασμα JSON</button>
+    </div>
+
+    <!-- JSON Upload Section -->
+    <div id="json-form" class="hidden">
+      <div class="centered-text">
+        <h2>Εισαγωγή από JSON</h2>
+        <p>Επιλέξτε ένα αρχείο JSON με τα στοιχεία των φοιτητών/διδασκόντων και πατήστε "Ανέβασμα"</p>
+      </div>
+      <div class="upload-container">
+        <label for="jsonFile" class="change-btn">Επιλέξτε JSON αρχείο</label>
+        <input type="file" id="jsonFile" accept=".json" hidden>
+        <span id="fileName">Κανένα αρχείο επιλεγμένο</span>
+        <button id="uploadBtn" class="change-btn"disabled>Ανέβασμα</button>
+      </div>
+    </div>
+
+    <!-- Manual Entry Section -->
+    <div id="manual-form" class="hidden">
+      <!-- User Type Selector -->
+      <section id="insert-form">
+        <fieldset>
+          <legend>Επιλογή τύπου χρήστη</legend>
+          <label><input type="radio" name="user-type" value="φοιτητής"> Φοιτητής</label>
+          <label><input type="radio" name="user-type" value="διδάσκων"> Διδάσκων</label>
+        </fieldset>
+      </section>
+
+      <!-- Student / Professor Forms -->
+      <section id="forms-container">
+        <!-- Student Form -->
+        <form id="student-form" class="hidden">
+          <h2>Φόρμα εισαγωγής φοιτητή</h2>
+          <input type="hidden" name="formType" value="student">
+          <div class="form-columns">
+            <div class="form-column">
+              <label for="am">Αριθμός μητρώου:</label>
+              <input type="number" id="am" name="am" maxlength="9" required>
+              <label for="student-username">Username:</label>
+              <input type="text" id="student-username" name="username" maxlength="9">
+              <label for="student-pass_word">Κωδικός:</label>
+              <input type="password" id="student-pass_word" name="pass_word" maxlength="30" required>
+              <label for="student-onoma">Όνομα:</label>
+              <input type="text" id="student-onoma" name="onoma" maxlength="15" required>
+              <label for="student-eponimo">Επώνυμο:</label>
+              <input type="text" id="student-eponimo" name="eponimo" maxlength="30" required>
+            </div>
+            <div class="form-column">
+              <label for="etos">Έτος εισαγωγής:</label>
+              <input type="number" id="etos" name="etos" min="2000" required>
+              <label for="student-email">E-mail:</label>
+              <input type="email" id="student-email" name="email" maxlength="30">
+              <label for="kinito">Κινητό τηλέφωνο:</label>
+              <input type="tel" id="kinito" name="kinito" maxlength="10">
+              <label for="stathero">Σταθερό τηλέφωνο:</label>
+              <input type="tel" id="stathero" name="stathero" maxlength="10">
+              <label for="dieuthinsi">Διεύθυνση:</label>
+              <input type="text" id="dieuthinsi" name="dieuthinsi" maxlength="30" required>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="change-btn">Υποβολή</button>
+            <button type="button" class="cancel-btn">Ακύρωση</button>
+          </div>
+        </form>
+
+        <!-- Professor Form -->
+        <form id="prof-form" class="hidden">
+          <h2>Φόρμα εισαγωγής διδάσκοντα</h2>
+          <input type="hidden" name="formType" value="professor">
+          <div class="form-columns">
+            <div class="form-column">
+              <label for="prof-username">Username:</label>
+              <input type="text" id="prof-username" name="username" maxlength="15" required>
+              <label for="prof-onoma">Όνομα:</label>
+              <input type="text" id="prof-onoma" name="onoma" maxlength="15" required>
+              <label for="prof-eponimo">Επώνυμο:</label>
+              <input type="text" id="prof-eponimo" name="eponimo" maxlength="15" required>
+              <label for="profession">Επάγγελμα:</label>
+              <select id="profession" name="profession" required>
+                <option value="">--Επιλέξτε--</option>
+                <option value="TEE">ΤΕΕ</option>
+                <option value="DEP">ΔΕΠ</option>
+                <option value="EEP">ΕΕΠ</option>
+                <option value="EDIP">ΕΔΙΠ</option>
+                <option value="ETEP">ΕΤΕΠ</option>
+              </select>
+            </div>
+            <div class="form-column">
+              <label for="prof-pass_word">Κωδικός:</label>
+              <input type="password" id="prof-pass_word" name="pass_word" maxlength="30" required>
+              <label for="prof-email">E-mail:</label>
+              <input type="email" id="prof-email" name="email" maxlength="30" required>
+              <label for="tilefono">Τηλέφωνο:</label>
+              <input type="tel" id="tilefono" name="tilefono" maxlength="10" required>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="change-btn">Υποβολή</button>
+            <button type="button" class="cancel-btn">Ακύρωση</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <pre id="preview" class="hidden"></pre>
+    <div id="result"></div>
+  </main>
+
+  <script src="../JavaScript/logout.js"></script>
+  <script src="../JavaScript/check_page.js"></script>
+  <script src="../JavaScript/grammateiainsert.js"></script>
+</body>
+
+</html>

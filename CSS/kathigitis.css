@@ -1,0 +1,664 @@
+/* --- Modern Accepted Applications Section --- */
+#accepted-section {
+  margin-top: 48px;
+  padding: 32px 28px 28px 28px;
+  border-top: 3px solid #014d20;
+  background: linear-gradient(120deg, #e8f5e9 0%, #f0f8f4 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 51, 20, 0.08);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#accepted-section h2 {
+  font-size: 26px;
+  color: #014d20;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.application-dropdown {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 16px;
+  margin: 0 0 18px 0;
+  border: 1.5px solid #b2dfdb;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(1,77,32,0.04);
+  transition: border-color 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.application-dropdown:focus {
+  border-color: #014d20;
+  outline: none;
+}
+
+.application-details {
+  background: linear-gradient(120deg, #ffffff 60%, #e0f2f1 100%);
+  border: 1.5px solid #b2dfdb;
+  padding: 24px 28px;
+  margin-top: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(1,77,32,0.07);
+  font-size: 17px;
+  color: #1b3a2b;
+  width: 100%;
+  max-width: 420px;
+  transition: box-shadow 0.2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.application-details h3 {
+  font-size: 20px;
+  color: #014d20;
+  margin-bottom: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.application-details p {
+  margin: 10px 0 6px 0;
+  font-size: 16px;
+  color: #1b3a2b;
+}
+.application-details span {
+  font-weight: 500;
+  color: #014d20;
+}
+
+article#diplomatikes {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.dropdown-btn {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #003314;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.dropdown-btn:hover {
+  background-color: #00692a;
+}
+
+.dropdown-content {
+  display: none;
+  overflow: auto;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border: none;
+  margin-top: 0.5em;
+  border-radius: 8px;
+}
+
+.thesis-card {
+  margin: 4px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #014d20, #026c2c);
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  min-height: 40px;
+  overflow: hidden;
+}
+
+.thesis-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #026c2c, #038c3f);
+}
+
+.thesis-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.thesis-summary i {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.thesis-details {
+  display: none;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: white;
+}
+
+.thesis-card.expanded .thesis-details {
+  display: block;
+}
+
+.application-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.application-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.status-select {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  vertical-align: middle;
+}
+
+.save-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #388e3c;
+}
+
+.save-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.no-applications {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #757575;
+}
+
+.toggle-btn {
+  background: linear-gradient(135deg, #014d20, #026c2c);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  max-width: 500px;
+}
+
+.toggle-btn:hover {
+  background: linear-gradient(135deg, #026c2c, #038c3f);
+  transform: scale(1.02);
+}
+
+.application-dropdown {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.application-details {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.pending-card {
+  background-color: #f0f8f4;
+  border-left: 5px solid #014d20;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pending-card:hover {
+  background-color: #e2f0e8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pending-card .save-btn {
+  background-color: #014d20;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px; /* Adjusted to match dropdown height */
+  font-size: 15px;
+  cursor: pointer;
+  height: 36px; /* Matches .status-select */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.pending-card .save-btn:hover {
+  background-color: #00702d;
+}
+
+.pending-card .save-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#accepted-section {
+  margin-top: 40px;
+  padding: 24px;
+  border-top: 2px solid #014d20;
+  background-color: #f0f8f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#accepted-section h2 {
+  font-size: 22px;
+  color: #014d20;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.grading-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.grade-select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.save-grade-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.save-grade-btn:hover {
+    background-color: #45a049;
+}
+
+.save-grade-btn i {
+    margin-right: 5px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Export group layout */
+.export-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.export-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+select.export-style {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.change-btn.export-style {
+  background: linear-gradient(135deg, #014d20, #026c2c);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 230px;
+  height: 40px;
+}
+
+.change-btn.export-style:hover {
+  background: linear-gradient(135deg, #026c2c, #038c3f);
+  transform: scale(1.02);
+}
+
+/* Keep button size consistent */
+#export-button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Style dropdowns separately */
+#export-format,
+#export-filter {
+  margin: 0;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+#export-format,
+#export-filter {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Center the button container */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+/* Optional: make buttons consistent in size */
+.button-group button {
+  min-width: 120px;
+  padding: 10px 20px;
+}
+
+.stats {
+  padding-top: 70px;
+  position: relative;
+  z-index: 1;         
+}
+
+article#aitiseis {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+article#aitiseis h1 {
+  font-size: 28px;
+  color: #111 !important;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #222;
+}
+
+.chart-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.chart-card {
+  width: 100%;
+  max-width: 600px;   /* Match summary card width */
+  min-width: 320px;
+  min-height: 320px;  /* Increase height for more space */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-card canvas {
+  width: 100% !important;
+  height: 320px !important; /* Increase chart height */
+}
+
+.chart-card,
+.chart-card *,
+.chart-card canvas,
+.chart-card .chartjs-render-monitor {
+  color: #111 !important;
+  fill: #111 !important;
+}ok
+
+.summary-text {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.summary-text strong {
+  color: #111;
+}
+
+.summary-text hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+.kathigitis-stats-page .card-row {
+  gap: 30px;
+  margin-top: 40px;
+  border: none;
+  background: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kathigitis-stats-page #grades-stats-charts,
+.kathigitis-stats-page #grades-stats-summary {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+  max-width: 900px;
+}
+
+  /* ================================
+   Responsive Overrides
+   ================================ */
+
+/* Up to 1024px (small laptops/tablets) */
+@media (max-width: 1024px) {
+  /* Accepted section fluid */
+  #accepted-section {
+    width: 90%;
+    max-width: none;
+    padding: 28px;
+  }
+
+  /* Dropdowns & details expand */
+  .application-dropdown,
+  .application-details {
+    width: 100%;
+    max-width: none;
+    padding: 14px;
+  }
+
+  /* Cards stop enforcing min-width */
+  .thesis-card,
+  .chart-card {
+    min-width: auto;
+  }
+}
+
+/* Up to 768px (tablets & large phones) */
+@media (max-width: 768px) {
+
+  /* Accepted section tweaks */
+  #accepted-section {
+    margin: 20px auto;
+    padding: 24px 16px;
+  }
+
+  /* Inputs & panels smaller */
+  .application-dropdown,
+  .application-details {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  /* Fold thesis summary to vertical */
+  .thesis-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Full-width list cards */
+  .thesis-card,
+  .application-card {
+    width: 100%;
+  }
+
+  /* Grading: stack selects & button */
+  .grading-section {
+    padding: 12px;
+  }
+  .grade-select {
+    width: 100%;
+    margin-right: 0  !important;
+    margin-bottom: 10px;
+  }
+
+  /* Button groups become vertical */
+  .button-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .button-row button {
+    width: 100%;
+  }
+
+  /* Export group stacks */
+  .export-group,
+  .export-wrapper {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Chart cards adapt */
+  .chart-card {
+    width: 100%;
+    max-width: none;
+  }
+  .chart-card canvas {
+    height: 240px !important;
+  }
+
+  /* Stats page cards stack */
+  .kathigitis-stats-page .card-row {
+    flex-direction: column;
+  }
+}
+
+/* Up to 480px (mobile phones portrait) */
+@media (max-width: 480px) {
+  /* Tighter padding/text */
+  #accepted-section {
+    padding: 20px 12px;
+  }
+  #accepted-section h2 {
+    font-size: 20px;
+  }
+  .application-dropdown,
+  .application-details {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Collapse dropdown buttons */
+  .dropdown-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Smaller grading & buttons */
+  .grading-section {
+    padding: 10px;
+  }
+  .button-group,
+  .button-row {
+    gap: 10px;
+  }
+
+  /* Even tighter chart spacing */
+  .chart-grid {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Οι αιτήσεις μου</title>
+  <link rel="stylesheet" href="../CSS/common.css">
+  <link rel="stylesheet" href="../CSS/foititis.css">
+</head>
+
+<body>
+  <script src="../JavaScript/check_page.js"></script>
+
+  <nav class="navbar">
+    <div class="upatraslogo">
+      <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="anakoinoseis.html" target="_blank">ΑΡΧΙΚΗ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/dep/" target="_blank">ΜΕΛΗ ΔΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/edip-etep/" target="_blank">ΜΕΛΗ ΕΔΙΠ-ΕΤΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/grammateia/" target="_blank">ΓΡΑΜΜΑΤΕΙΑ</a></li>
+      <li><a href="https://nemertes.library.upatras.gr/home" target="_blank">ΝΗΜΕΡΤΗΣ</a></li>
+    </ul>
+    <div class="ceidlogo">
+      <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/ceidlogo.png" alt="CEID logo" class="logo-right">
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="../HTML/foititishome.html">Προεπισκόπηση</a></li>
+      <li><a href="../HTML/foititisdiplomatiki.html">H διπλωματική μου</a></li>
+      <li><a href="../HTML/foititisaitiseis.html">Οι αιτήσεις μου</a></li>
+      <li><a href="../HTML/foititisexetasi.html">Εξέταση διπλωματικής</a></li>
+    </ul>
+
+    <script src="../JavaScript/logout.js"></script>
+    <button id="logout-button" class="logout">Log out</button>
+  </aside>
+
+  <main class="main-content">
+    <article id="aitiseis">
+      <h1>Οι αιτήσεις μου</h1>
+    </article>
+
+    <div class="application-message-container">
+      <div class="application-card-wrapper">
+        <!-- Cards will be injected here -->
+      </div>
+    </div>
+
+    <div class="add-application-container">
+      <button class="add-application-btn">Νέα αίτηση</button>
+    </div>
+
+    <div id="applicationModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Νέα αίτηση για τριμελής επιτροπή</h2>
+        <form id="application-form">
+          <input type="hidden" id="thesisId" name="thesisId" value="">
+          <label for="professor">Επιλέξτε καθηγητή:</label>
+          <select id="professor" name="professor" required>
+            <!-- Options will be populated dynamically -->
+          </select>
+          <button type="submit">Υποβολή αίτησης</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="../JavaScript/foititis_aitiseis.js"></script>
+</body>
+
+</html>

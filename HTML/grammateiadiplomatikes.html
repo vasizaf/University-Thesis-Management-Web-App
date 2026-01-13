@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Διπλωματικές</title>
+    <link rel="stylesheet" href="../CSS/common.css"> 
+    <link rel="stylesheet" href="../CSS/grammateia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<script src="../JavaScript/check_page.js"></script>
+
+<body>
+    <nav class="navbar">
+        <div class="upatraslogo">
+            <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+                <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="anakoinoseis.html" target="_blank">ΑΡΧΙΚΗ</a></li>
+            <li><a href="https://www.ceid.upatras.gr/prosopiko/dep/" target="_blank">ΜΕΛΗ ΔΕΠ</a></li>
+            <li><a href="https://www.ceid.upatras.gr/prosopiko/edip-etep/" target="_blank">ΜΕΛΗ ΕΔΙΠ-ΕΤΕΠ</a></li>
+            <li><a href="https://www.ceid.upatras.gr/prosopiko/grammateia/" target="_blank">ΓΡΑΜΜΑΤΕΙΑ</a></li>
+            <li><a href="https://nemertes.library.upatras.gr/home" target="_blank">ΝΗΜΕΡΤΗΣ</a></li>
+        </ul>
+        <div class="ceidlogo">
+            <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+                <img src="../images/ceidlogo.png" alt="CEID logo" class="logo-right">
+            </a>
+        </div>
+    </nav>
+
+    <aside class="sidebar">
+        <ul class="sidebar-links">
+            <li><a href="grammateiahome.html">Προεπισκόπηση</a></li>
+            <li><a href="grammateiadiplomatikes.html">Διπλωματικές</a></li>
+            <li><a href="grammateiainsert.html">Εισαγωγή στοιχείων</a></li>
+        </ul>
+            <button class="logout" id="logout-button">Log out</button>
+
+        <script src="../JavaScript/logout.js"></script>
+    </aside>
+
+    <main class="main-content">
+        <article id="diplomatikes">
+            <h1>Eνεργές και υπό εξέταση διπλωματικές</h1>
+
+            <!-- NEW: Global Search Bar -->
+            <div class="search-container">
+                <input 
+                  type="text" 
+                  id="searchInput" 
+                  placeholder="Αναζήτηση διπλωματικής (τίτλος, φοιτητής, ΑΜ, ΓΣ)...">
+            </div>
+
+            <!-- NEW: Search Results -->
+            <div id="search-results" style="display:none; margin-top:20px;"></div>
+        </article>
+
+        <!-- Pending theses section -->
+        <div class="pending">
+            <button class="dropdown-btn">Υπό εξέταση <i class="fas fa-bars"></i></button>
+            <div id="pending-theses-container" class="dropdown-content">
+                <!-- Theses cards for pending status will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Active theses section -->
+        <div class="active">
+            <button class="dropdown-btn">Ενεργές <i class="fas fa-bars"></i></button>
+            <div class="dropdown-content">
+                <h4>Εκκρεμεί καταχώρηση αριθμού ΓΣ ανάθεσης</h4>
+                <div id="active-theses-container-npa"></div>
+
+                <h4>Ενεργές</h4>
+                <div id="active-theses-container-ypa"></div>
+            </div>
+        </div>
+
+        <!-- Final theses section -->
+        <div class="final">
+            <button class="dropdown-btn">
+                Έτοιμες προς περάτωση <i class="fas fa-bars"></i>
+            </button>
+            <div id="final-theses-container" class="dropdown-content">
+                <!-- Theses cards for final theses will be dynamically added here -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../JavaScript/grammateiadiplomatikes.js"></script>
+</body>
+
+</html>

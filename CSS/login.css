@@ -1,0 +1,170 @@
+/* Styling for the top bar */
+.top-bar {
+  width: 100%;
+  position: fixed; /* Σταθερή θέση στην κορυφή */
+  top: 0;
+  left: 0;
+  background-color: #014d20;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Κατανέμει τα στοιχεία μεταξύ τους */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 60px; /* Καθορισμένο ύψος για τη μπάρα */
+  min-width: 100%;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.7); /* Thin white border */
+  box-shadow: 0 2px 2px rgba(213, 213, 213, 0.1); /* Subtle white shadow */
+}
+
+/* Στόχευση του τίτλου στην μπάρα */
+.top-bar h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+/* Εικόνα logo 1 */
+.logo-left {
+  max-height: 50px;
+  width: auto;
+}
+
+/* Εικόνα logo 2 */
+.logo-right {
+  max-height: 50px;
+  width: auto;
+}
+
+/* Styling για το σώμα της σελίδας */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column; /* Στοιχίζει τα στοιχεία σε στήλες */
+  align-items: center; /* Κεντράρει τα στοιχεία οριζόντια */
+  min-height: 100vh; /* Εξασφαλίζει ότι η σελίδα καλύπτει όλο το ύψος της οθόνης */
+  padding-top: 60px; /* Δίνουμε χώρο για τη μπάρα */
+  box-sizing: border-box;
+  background-image: url('../images/background.jpg'); /* Κύρια εικόνα */
+  background-size: cover; /* Καλύπτει όλη την οθόνη */
+  background-position: center top;
+  background-attachment: fixed; /* Η εικόνα παραμένει σταθερή κατά τη διάρκεια κύλισης */
+  overflow: hidden; /* Αφαιρούμε τα scrollbars */
+  position: relative; /* Απαιτείται για το pseudo-element */
+}
+
+body::before {
+  content: ''; /* Δημιουργεί ένα νέο επίπεδο */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Ημιδιαφάνεια */
+    url('../images/shadow.jpg'); /* Overlay εικόνα */
+  background-size: cover; /* Καλύπτει όλη την οθόνη */
+  background-position: center; /* Κεντράρει την εικόνα */
+  background-blend-mode: overlay; /* Συνδυάζει τις εικόνες και τα χρώματα */
+  opacity: 0.3; /* Ρυθμίζει την ορατότητα της εικόνας */
+  z-index: -1; /* Τοποθετεί το επίπεδο πίσω από το περιεχόμενο */
+}
+
+
+/* Styling για το container του login */
+.login-container {
+  width: 300px;
+  padding: 20px;
+  background: rgb(255, 255, 255); /* Λευκό με διαφάνεια για καλύτερη αντίθεση με την εικόνα */
+  border: 1px solid #353535;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: absolute; /* Χρησιμοποιούμε absolute για να το τοποθετήσουμε κάτω από την μπάρα */
+  top: 50%; /* Τοποθετούμε το container στο μέσο του διαθέσιμου χώρου */
+  transform: translateY(-50%); /* Κεντράρει το container ακριβώς στο κέντρο του χώρου */
+}
+
+/* Στυλ για τον τίτλο του login */
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #252525;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.input-group i{
+  margin-right: 8px;
+  color: #014d20;
+}
+
+.input-group input{
+  flex: 1;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #252525;
+  margin-bottom: 2px;
+}
+
+/* Στυλ για τα πεδία εισαγωγής */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0;
+  border: none;
+  border-bottom: 2px solid #014d20;
+  border-radius: 4px;
+  background: rgb(245, 245, 245);
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Στυλ για το placeholder (κείμενο εισαγωγής) */
+.login-container input::placeholder {
+  color: #909090;
+}
+
+/* Styling για το κουμπί Login */
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #014d20;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Hover effect για το κουμπί Login */
+.login-container button:hover {
+  background: #027d33;
+}
+
+/* Styling για τα μηνύματα σφάλματος */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

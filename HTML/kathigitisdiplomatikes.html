@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Οι διπλωματικές μου</title>
+  <link rel="stylesheet" href="../CSS/common.css">
+  <link rel="stylesheet" href="../CSS/kathigitis.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<script src="../JavaScript/check_page.js"></script>
+
+<body>
+  <nav class="navbar">
+    <div class="upatraslogo">
+      <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="anakoinoseis.html" target="_blank">ΑΡΧΙΚΗ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/dep/" target="_blank">ΜΕΛΗ ΔΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/edip-etep/" target="_blank">ΜΕΛΗ ΕΔΙΠ-ΕΤΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/grammateia/" target="_blank">ΓΡΑΜΜΑΤΕΙΑ</a></li>
+      <li><a href="https://nemertes.library.upatras.gr/home" target="_blank">ΝΗΜΕΡΤΗΣ</a></li>
+    </ul>
+    <div class="ceidlogo">
+      <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/ceidlogo.png" alt="CEID logo" class="logo-right">
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="../HTML/kathigitishome.html">Προεπισκόπηση</a></li>
+      <li><a href="../HTML/kathigitisdiplomatikes.html">Οι διπλωματικές μου</a></li>
+      <li><a href="../HTML/kathigitisaitiseis.html">Οι αιτήσεις μου</a></li>
+      <li><a href="../HTML/kathigitis_statistics.html">Στατιστικά</a></li>
+    </ul>
+    <script src="../JavaScript/logout.js"></script>
+    <button id="logout-button" class="logout">Log out</button>
+  </aside>
+<main class="main-content">
+  <article id="diplomatikes">
+    <h1>Οι διπλωματικές μου</h1>
+  </article>
+
+    <div class="does">
+    <button class="dropdown-btn">
+      Υπό ανάθεση διπλωματικές <i class="fas fa-bars"></i>
+    </button>
+    <div id="does-theses-container" class="dropdown-content" style="display:none;">
+      <button class="dropdown-btn">
+        Ως Επιβλέπων <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="does-epivlepontas" class="dropdown-content" style="display:none;"></div>
+
+      <button class="dropdown-btn">
+        Ως 3μελής <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="does-trimelis" class="dropdown-content" style="display:none;"></div>
+    </div>
+  </div>
+
+  <div class="pending">
+    <button class="dropdown-btn">
+      Ενεργές διπλωματικές <i class="fas fa-bars"></i>
+    </button>
+    <div id="pending-theses-container" class="dropdown-content" style="display:none;">
+      <button class="dropdown-btn">
+        Ως Επιβλέπων <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="pending-epivlepontas" class="dropdown-content" style="display:none;"></div>
+
+      <button class="dropdown-btn">
+        Ως 3μελής <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="pending-trimelis" class="dropdown-content" style="display:none;"></div>
+    </div>
+  </div>
+
+
+    <div class="exam">
+    <button class="dropdown-btn">
+      Υπό εξέταση διπλωματικές <i class="fas fa-bars"></i>
+    </button>
+    <div id="exam-theses-container" class="dropdown-content" style="display:none;">
+      <button class="dropdown-btn">
+        Ως Επιβλέπων <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="exam-epivlepontas" class="dropdown-content" style="display:none;"></div>
+
+      <button class="dropdown-btn">
+        Ως 3μελής <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="exam-trimelis" class="dropdown-content" style="display:none;"></div>
+    </div>
+  </div>
+
+  <div class="active">
+    <button class="dropdown-btn">
+      Ολοκληρωμένες διπλωματικές <i class="fas fa-bars"></i>
+    </button>
+    <div id="active-theses-container" class="dropdown-content" style="display:none;">
+      <button class="dropdown-btn">
+        Ως Επιβλέπων <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="active-epivlepontas" class="dropdown-content" style="display:none;"></div>
+
+      <button class="dropdown-btn">
+        Ως 3μελής <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="active-trimelis" class="dropdown-content" style="display:none;"></div>
+    </div>
+  </div>
+
+    <div class="kanoniko_rejected">
+    <button class="dropdown-btn">
+      Ακυρωμένες διπλωματικές <i class="fas fa-bars"></i>
+    </button>
+    <div id="kanoniko_rejected-theses-container" class="dropdown-content" style="display:none;">
+      <button class="dropdown-btn">
+        Ως Επιβλέπων <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="kanoniko_rejected-epivlepontas" class="dropdown-content" style="display:none;"></div>
+
+      <button class="dropdown-btn">
+        Ως 3μελής <i class="fas fa-chevron-down"></i>
+      </button>
+      <div id="kanoniko_rejected-trimelis" class="dropdown-content" style="display:none;"></div>
+    </div>
+  </div>
+
+  <div class="button-flex-container" style="display: flex; gap: 32px; margin-top: 32px; align-items: flex-start;">
+    <!-- Left side: 4 main buttons -->
+    <div class="button-left" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; width: 480px;">
+      <button id="add-button" class="change-btn export-style">Καταχώρηση διπλωματικής</button>
+      <button id="anathesi-button" class="change-btn export-style">Ανάθεση διπλωματικής</button>
+      <button id="cancel-anathesi-button" class="change-btn export-style">Ακύρωση ανάθεσης</button>
+      <button id="cancel-thesis-button" class="change-btn export-style">Ακύρωση διπλωματικής</button>
+    </div>
+
+    <!-- Right side: export button and dropdowns -->
+    <div class="button-right" style="display: flex; flex-direction: column; align-items: flex-end; gap: 16px; width: 100%;">
+      <div id="dropdown-row" style="display: flex; gap: 16px;"></div>
+      <button id="export-button" class="change-btn export-style">Εξαγωγή διπλωματικών</button>
+    </div>
+
+  </div>
+
+  <div id="messages" aria-live="polite"></div>
+
+</main>
+
+  <script src="../JavaScript/kathigitis_diplomatikes.js"></script>
+  <script src="../JavaScript/export_diplomatikes.js"></script>
+  <script src="../JavaScript/create_diplomatiki.js"></script>
+  <script src="../JavaScript/anathesi_diplomatiki.js"></script>
+  <script src="../JavaScript/cancel_anathesi.js"></script>
+  <script src="../JavaScript/cancel_diplomatiki.js"></script>
+
+</body>
+</html>

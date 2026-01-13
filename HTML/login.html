@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../CSS/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-image-page">
+
+  <div class="top-bar">
+    <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+      <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left">
+    </a>
+    <h1>
+      Πλατφόρμα διαχείρισης διπλωματικών εργασιών <br>
+      Τμήματος Μηχανικών Ηλεκτρονικών Υπολογιστών & Πληροφορικής
+    </h1>
+    <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+      <img src="../images /ceidlogo.png" alt="CEID logo" class="logo-right">
+    </a>
+  </div>
+
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="username" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="input-group">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p class="error" id="errorMessage"></p>
+  </div>
+
+  <script src="../JavaScript/login.js"></script>
+</body>
+</html>

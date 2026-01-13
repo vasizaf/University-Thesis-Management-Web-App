@@ -1,0 +1,7 @@
+Array
+(
+    [dieuthinsi] => Μαιζώνος 35
+    [email] => up1234567@ceid.upatras.gr
+    [kinito] => 6912345678
+    [stathero] => 2112345678
+)

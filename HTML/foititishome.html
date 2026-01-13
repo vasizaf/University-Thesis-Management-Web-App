@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Στοιχεία φοιτητή</title>
+  <link rel="stylesheet" href="../CSS/common.css">
+  <link rel="stylesheet" href="../CSS/foititis.css">
+</head>
+
+<script src="../JavaScript/check_page.js"></script>
+
+<body>
+  
+  <nav class="navbar">
+    <div class="upatraslogo">
+      <a href="https://www.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/upatraslogo.png" alt="UPatras logo" class="logo-left">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="anakoinoseis.html" target="_blank">ΑΡΧΙΚΗ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/dep/" target="_blank">ΜΕΛΗ ΔΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/edip-etep/" target="_blank">ΜΕΛΗ ΕΔΙΠ-ΕΤΕΠ</a></li>
+      <li><a href="https://www.ceid.upatras.gr/prosopiko/grammateia/" target="_blank">ΓΡΑΜΜΑΤΕΙΑ</a></li>
+      <li><a href="https://nemertes.library.upatras.gr/home" target="_blank">ΝΗΜΕΡΤΗΣ</a></li>
+    </ul>
+    <div class="ceidlogo">
+      <a href="https://www.ceid.upatras.gr/" target="_blank" rel="noopener noreferrer">
+        <img src="../images/ceidlogo.png" alt="CEID logo" class="logo-right">
+      </a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="../HTML/foititishome.html">Προεπισκόπηση</a></li>
+      <li><a href="../HTML/foititisdiplomatiki.html">H διπλωματική μου</a></li>
+      <li><a href="../HTML/foititisaitiseis.html">Οι αιτήσεις μου</a></li>
+      <li><a href="../HTML/foititisexetasi.html">Εξέταση διπλωματικής</a></li>
+    </ul>
+    <button id="logout-button" class="logout">Log out</button>
+    <script src="../JavaScript/logout.js"></script>
+  </aside>
+
+  <main class="main-content">
+    <article id="overview">
+      <h1>Στοιχεία φοιτητή</h1>
+    </article>
+
+    <div class="card-row">
+      <div class="info-card">
+        <h2>Γενικές πληροφορίες</h2>
+        <ul class="info-list">
+          <li><strong>Επώνυμο:</strong> <span id="eponimo"></span></li>
+          <li><strong>Όνομα:</strong> <span id="onoma"></span></li>
+          <li><strong>Αριθμός μητρώου:</strong> <span id="am"></span></li>
+          <li><strong>Έτος εισαγωγής:</strong> <span id="etos"></span></li>
+        </ul>
+      </div>
+
+      <div class="info-card" id="contact">
+        <h2>Στοιχεία επικοινωνίας</h2>
+        <div id="contact-content">
+          <ul class="info-list">
+            <li><strong>Διεύθυνση:</strong> <span id="dieuthinsi"></span></li>
+            <li><strong>E-mail:</strong> <span id="email"></span></li>
+            <li><strong>Κινητό τηλέφωνο:</strong> <span id="kinito"></span></li>
+            <li><strong>Σταθερό τηλέφωνο:</strong> <span id="stathero"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="change-container">
+      <button class="change-btn">Αλλαγή στοιχείων</button>
+    </div>
+  </main>
+
+  <script src="../JavaScript/foititis_home.js"></script>
+
+</body>
+</html>
