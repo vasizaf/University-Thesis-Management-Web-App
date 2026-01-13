@@ -32,7 +32,7 @@ The system replaces manual paperwork with a digital workflow, allowing users to:
 * **Student Management:** Accept or reject applicants and manage supervised students.
 * **Grading System:** Input final grades and view statistics/averages automatically calculated by the system.
 
-### 🏛️ For Secretaries (Grammateia)
+### 🏛️ For Secretaries
 * **User Management:** Manually register new professors and students into the system.
 * **Oversight:** Overview theses, cancel assignments, or handle special requests.
 * **Announcements:** Post department-wide announcements visible to all users.
