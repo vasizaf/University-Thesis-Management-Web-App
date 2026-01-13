@@ -85,7 +85,7 @@ This project was designed and built as a group assignment for the **[University 
 
 * **[Vasileios Zafeiris]** - *[Student & Professor (secondarily) Logic, HTML, CSS]*
 * **[Ioannis Grigoropoulos]** - *[Professor Logic, MySQL]* - [GitHub Profile](https://github.com/Nolzok)
-* **[Alkis Chatzopoulos]** - *[Secretary Logic]* - [GitHub Profile](https://github.com/their-AlkisChatz)
+* **[Alkis Chatzopoulos]** - *[Secretary Logic]* - [GitHub Profile](https://github.com/AlkisChatz)
 
 ---
 Note: This project is for educational purposes and demonstrates full-stack CRUD capabilities without the use of high-level frameworks.
